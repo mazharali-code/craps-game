@@ -32,10 +32,10 @@ export function GameCountInput({ runGames, disabled = false }: GameCountProps) {
         disabled={disabled}
         aria-describedby="games-count-hint"
         min={1}
-        max={10_000_000}
+        max={10_000_0}
       />
       <span id="games-count-hint" className="hint">
-        You can enter a number between 1 and 10,000,000
+        You can enter a number between 1 and 100,000
       </span>
       <button type="submit" disabled={disabled}>
         {disabled ? 'Running…' : 'Run simulation'}
