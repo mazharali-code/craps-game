@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from 'react'
+import './GameCountInput.css'
 
 export interface GameCountProps {
   runGames: (gameCount: number) => void
@@ -17,9 +18,13 @@ export function GameCountInput({ runGames, disabled = false }: GameCountProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} aria-label="Run crap game simulation">
+    <form
+      className="game-count-input"
+      onSubmit={handleSubmit}
+      aria-label="Run crap game simulation"
+    >
       <label htmlFor="games-count">Enter the number of games to simulate:</label>
-    <input
+      <input
         id="games-count"
         type="number"
         value={gameCounter}
@@ -28,8 +33,10 @@ export function GameCountInput({ runGames, disabled = false }: GameCountProps) {
         aria-describedby="games-count-hint"
         min={1}
         max={10_000_000}
-      /> 
-      <span id="games-count-hint">You can enter a number between 1 and 10,000,000</span>
+      />
+      <span id="games-count-hint" className="hint">
+        You can enter a number between 1 and 10,000,000
+      </span>
       <button type="submit" disabled={disabled}>
         {disabled ? 'Running…' : 'Run simulation'}
       </button>

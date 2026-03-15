@@ -8,12 +8,16 @@ function App() {
   const { run, stats, isRunning, error } = useSimulation()
 
   return (
-    <>
+    <div className="game-container">
       <h1>Craps Simulator</h1>
-      <HowToPlay />
-      <GameCountInput runGames={run} disabled={isRunning} />
-      <SimulationReport stats={stats} pending={isRunning} error={error} />
-    </>
+      <div className="game-container-inner">
+        <div className="game-container-inner-left">
+          <HowToPlay />
+          <GameCountInput runGames={run} disabled={isRunning} />
+        </div>
+        <SimulationReport stats={stats} pending={isRunning} error={error} />
+      </div>
+    </div>
   )
 }
 

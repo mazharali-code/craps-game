@@ -1,0 +1,72 @@
+.simulation-report {
+  padding: 0;
+  width: 450px;
+}
+
+.simulation-report h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.simulation-report p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.simulation-report .placeholder {
+  color: #6c757d;
+}
+
+.simulation-report .error {
+  color: #dc3545;
+}
+
+.simulation-report dl {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  font-size: 0.8rem;
+}
+
+.simulation-report dt {
+  font-weight: 600;
+  color: #212529;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  margin: 0;
+}
+
+.simulation-report dd {
+  margin: 0 0 0 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  color: #212529;
+}
+
+.simulation-report dt:last-of-type,
+.simulation-report dd:last-of-type {
+  border-bottom: none;
+}
+
+@media (min-width: 480px) {
+  .simulation-report dl {
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+  }
+
+  .simulation-report dt {
+    grid-column: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding-right: 1rem;
+  }
+
+  .simulation-report dd {
+    grid-column: 2;
+    margin: 0;
+    text-align: right;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+}

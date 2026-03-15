@@ -1,0 +1,35 @@
+.how-to-play {
+  padding: 0;
+  font-size: 0.75rem;
+}
+
+.how-to-play h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.how-to-play p {
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.how-to-play ul {
+  list-style: circle;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.how-to-play li {
+  color: #212529;
+}
+
+.how-to-play li:last-child {
+  border-bottom: none;
+}
+
+.how-to-play strong {
+  font-weight: 600;
+}
