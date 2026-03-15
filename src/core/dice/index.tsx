@@ -1,3 +1,4 @@
+import type { RollProvider } from "../../types"
 
 
 function randomInt(min: number, max: number): number {
