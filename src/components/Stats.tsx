@@ -28,7 +28,8 @@ export function SimulationReport({ pending, stats,  error }: SimulationStatsProp
   if (!stats || stats.gamesPlayed === 0) {
     return (
       <section className="simulation-report" aria-live="polite">
-        <p className="placeholder">Enter the number of games and click &quot;Run simulation&quot; to see results.</p>
+      <h2>Simulation statistics</h2>
+      <p className="placeholder">Enter the number of games and click &quot;Run simulation&quot; to see results.</p>
       </section>
     )
   }
