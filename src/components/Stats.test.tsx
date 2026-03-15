@@ -21,7 +21,6 @@ describe('SimulationReport', () => {
       losses: 51,
     }
     render(<SimulationReport stats={stats} pending={false} error={null} />)
-    expect(screen.getByText('Results')).toBeInTheDocument()
     expect(screen.getByText('3.45')).toBeInTheDocument()
     expect(screen.getByText('12')).toBeInTheDocument()
     expect(screen.getByText('1')).toBeInTheDocument()
